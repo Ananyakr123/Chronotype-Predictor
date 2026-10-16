@@ -1,0 +1,52 @@
+.backpage{
+    background: linear-gradient(to right, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0))
+}
+
+
+h1 {
+    color: white;
+    font-family: cursive;
+    font-size: 60px;
+  }
+  button {
+    border: 1px dotted white;
+    background: transparent;
+    padding: 10px;
+    color: white;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background: white;
+    color: black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 30px -10px;
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  /* Buttons inside the white quiz card */
+  .backpage .bg-white button {
+    border: 1px solid #d1d5db;
+    background: #f3f4f6;
+    color: #111827;
+  }
+  
+  /* Hover effect for quiz buttons */
+  .backpage .bg-white button:hover {
+    background: #e5e7eb;
+    color: #111827;
+  }
+  
+  /* Next and Show Result buttons */
+  .backpage .bg-white button.bg-blue-600 {
+    background: #2563eb;
+    color: white;
+    border-color: #2563eb;
+  }
+  
+  .backpage .bg-white button.bg-blue-600:hover {
+    background: #1d4ed8;
+    color: white;
+  }
