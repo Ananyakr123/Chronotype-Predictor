@@ -60,6 +60,8 @@ const Landing = () => {
   }, 0);
 
   return (
+    <>
+    <div className="stars"> </div>
     <div className="backpage w-full min-h-screen flex flex-col justify-center items-center gap-8 px-4 py-8">
       <h1 className="text-2xl sm:text-3xl md:text-4xl text-center font-bold">
         Curious about your chronotype?
@@ -235,6 +237,7 @@ const Landing = () => {
         </div>
       )}
     </div>
+    </>
   );
 };
 

@@ -1,8 +1,90 @@
-.backpage{
+/* .backpage{
     background: linear-gradient(to right, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0))
+} */
+
+body {
+  margin: 0;
+  background: linear-gradient(to right, #374151, #111827, #000);
+}
+
+/* Starry background */
+.stars,
+.stars::before,
+.stars::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.stars {
+  box-shadow:
+    50px 80px white,
+    120px 200px white,
+    200px 120px white,
+    300px 300px white,
+    400px 100px white,
+    500px 250px white,
+    600px 150px white,
+    700px 350px white,
+    800px 200px white,
+    900px 100px white,
+    1000px 300px white,
+    1100px 180px white,
+    200px 450px white,
+    450px 500px white,
+    750px 450px white,
+    950px 550px white;
+  animation: twinkle 3s ease-in-out infinite alternate;
+}
+
+.stars::before {
+  box-shadow:
+    80px 150px #b9d7ff,
+    180px 350px white,
+    350px 180px white,
+    550px 400px #b9d7ff,
+    650px 80px white,
+    850px 350px white,
+    1050px 450px white;
+  animation: twinkle 4s ease-in-out infinite alternate-reverse;
+}
+
+.stars::after {
+  box-shadow:
+    150px 50px white,
+    320px 220px #b9d7ff,
+    480px 320px white,
+    720px 180px white,
+    920px 250px white,
+    1150px 100px white;
+  animation: twinkle 2s ease-in-out infinite alternate;
+}
+
+@keyframes twinkle {
+  from {
+    opacity: 0.2;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1.4);
+  }
 }
 
 
+.backpage {
+  min-height: 100vh;
+  background: transparent;
+  position: relative;
+  z-index: 1;
+}
 h1 {
     color: white;
     font-family: cursive;
